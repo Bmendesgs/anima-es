@@ -1,0 +1,67 @@
+body{
+    margin: 0%;
+    display: flex;
+    
+}
+
+img{
+    margin: 10px;
+    width: 300px;
+    /*transition: .5s;*/
+    animation-name: mover;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+/*img:hover{
+    filter: grayscale(80%);
+    box-shadow: 10px 10px 30px black;
+    transform: scale(2) rotate(360deg);
+}*/
+
+@keyframes mover{
+    from{
+        transform: translateX(0);
+    }
+    
+    to{
+        transform: translateX(1000px);
+    }
+    
+}
+
+@keyframes sombra {
+    
+    from{
+        box-shadow: none;
+    }
+    to{
+        box-shadow: 0 0 0 100px black;
+    }
+    
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 260%;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-play-state: running;
+
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
